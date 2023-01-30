@@ -22,9 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25957126-b29a-4337-9a83-34cc54de8a3b" name="Default Changelist" comment="">
+    <list default="true" id="25957126-b29a-4337-9a83-34cc54de8a3b" name="Default Changelist" comment="PNG to png">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/resistive_heater/wiring.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/resistive_heater/wiring.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/modal_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modal_scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +59,14 @@
       <option name="presentableId" value="Default" />
       <updated>1606499821653</updated>
     </task>
+    <task id="LOCAL-00001" summary="PNG to png">
+      <created>1675105437521</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675105437521</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,5 +79,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PNG to png" />
+    <option name="LAST_COMMIT_MESSAGE" value="PNG to png" />
   </component>
 </project>

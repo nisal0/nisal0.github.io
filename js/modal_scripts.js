@@ -11,7 +11,7 @@ function closeModal(i){
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  for (var i=1; i<=15; i++){
+  for (var i=1; i<=16; i++){
   	var modal = document.getElementById(`modal${i}`);
   	if (event.target == modal) {
     	modal.style.display = "none";
