@@ -78,9 +78,9 @@
 				<div class="text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/extra/face.jpg);"></div>
+							<div class="profile-thumb" style="background: url(images/extra/face_comp.jpg);"></div>
 							<h1><span>Nisal Ovitigala</span></h1>
-							<h3><span>Mechanical Engineer</span></h3>
+							<h3><span>Hardware Test Engineer</span></h3>
 							<div class="section-links">
 								<div class="buttons">
 									<a href="#fh5co-about"><div class="section-link add-right-space">About Me</div></a>
@@ -120,7 +120,7 @@
 						electronics. My experience has allowed me to develop test setups that guarantee the system, subsystems and
 						 components meet engineering specifications and have a streamlined integration process.
 						At Formlabs, I have had the opportunity to work with a diverse range of systems, including
-						pneumatics, electromechanical systems, thermals, and sensors, among others. This experience has
+						electromechanical systems, thermal systems, and embedded software, among others. This experience has
 						equipped me with the skills and knowledge to grow my career as a full-stack hardware engineer.</p>
 					<p>
 						<ul class="fh5co-social-icons">
@@ -393,6 +393,14 @@
 						<div class="desc" >
 							<h3>Print Time Reduction - Formlabs</h3>
 							<span>Optimizing print process for faster printing</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<button onclick="showModal(17)" class="work" style="background-image: url(images/laser/cover.png);">
+						<div class="desc" >
+							<h3>Automated Laser Characterization - Formlabs</h3>
+							<span>Designed and scripted an internal tool to enable automated characterization of fiber lasers</span>
 						</div>
 					</a>
 				</div>
@@ -956,7 +964,7 @@
 		  <p>Images of test setups and data</p>
 		  <p align="center"><img src="images/resistive_heater/front_view.png" width="40%"></p>
 		  <p align="justify" style="font-size:70%"> Heater thermal cycler with 10 test units. Temperature and current draw over 500 cycles collected by Keysight DAQ970</p>
-		  <p align="center"><img src="images/resistive_heater/wiring.jpg" width="50%"></p>
+		  <p align="center"><img src="images/resistive_heater/wiring.jpg" width="40%"></p>
 		  <p align="justify" style="font-size:70%"> Thermal cycler project box. Features include circuit breakers and solid-state relays per heater.
 			  SSR controlled by Labjack T7 via Raspberry Pi. Separate signal PSU for minimal interference.
 			  Electrical capability to connect 20 test units for future testing </p>
@@ -1011,10 +1019,42 @@
 		  <p>SLS Nylon 12 powder consists of particles ~100um in diameter but plumed powder consists of 1-10um particles,
 			  narrowing down the particle size region of interest. A variety of motor accelerations were tested with all
 			  SLS powders to determine optimal acceleration increase that minimizes powder pluming.
-			  ~1.5s was saved per layer with improvements.
+			  ~1.5s was saved per layer with improvements. Combined with the Z-axis speedup, these changes save ~3 hours
+			  in print time (~14% faster). Further process improvements were implemented which brings the total print speed
+			  increase to 20%
 		  </p>
 		  <p align="center"><img src="images/speedup/plume.png" width="50%"></p>
 		  <p align="justify" style="font-size:70%"> Sample raw data collected from Nylon 12 GF</p>
+	  </div>
+	</div>
+
+	<div id="modal17" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span onclick="closeModal(17)" class="close">&times;</span>
+	    <h2>Automated Laser Characterization - Formlabs</h2>
+	    <hr>
+		  <p>Fiber laser characterization is a manual process which requires ~6 hours of time invested per laser. This
+			  process saps engineering hours and yields low data points in the data. I developed an internal tool
+			  to automate this process and was used to characterize over 20 lasers.
+		  Characterization consists of the following:</p>
+		  <ul>
+			  <li>LIV curve generation - Understanding the relationship between output power, current draw, and voltage</li>
+			  <li>Thermal response - Magnitude and direction of output power change for a given temperature rise</li>
+			  <li>Thermal steady state - Steady state temperature when laser is at full power</li>
+			  <li>Switching response - How fast does the laser respond to on-off switching between 1Hz - 250kHz
+		  </ul>
+		  <p>The automated tester consists of a custom PCB (developed alongside the EE team) and OTS DAQ components
+			  to control the laser driver and record feedback signals</p>
+		  <p align="center"><img src="images/laser/shell.png" width="40%"></p>
+		  <p>The tester can simulate interlock failures through switches and control laser power through a potentiometer or
+		  through software. A pigtail taps into the laser power wires to obtain voltage and current draw. Additional thermocouple
+		  inputs are present to monitor temperature of various parts of the laser assembly</p>
+		  <p align="center"><img src="images/laser/wires.png" width="30%"> <img src="images/laser/pigtail.png" width="28%"></p>
+			<p>Custom scripts I wrote allowed for additional data entries such as output power variation and time to
+			reach thermal equilibrium. Overall, this tool (currently in active usage) has already saved over a week of engineering
+			hours and will continue to be used for various automated test scripts that are currently in development</p>
 	  </div>
 	</div>
 	<div id="fh5co-blog">

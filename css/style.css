@@ -122,13 +122,13 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover .display-tc h2,
 .fh5co-cover .display-tc h3 {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   color: white;
 }
 #fh5co-header .display-tc h1,
 .fh5co-cover .display-tc h1 {
   font-family: "Kaushan Script", cursive;
-  margin-bottom: 30px;
+  margin-bottom: 1%;
   font-size: 80px;
   line-height: 1.3;
   font-weight: 100;
@@ -139,6 +139,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 3px 15px;
   position: relative;
 }
+
 #fh5co-header .display-tc h1 span:before,
 .fh5co-cover .display-tc h1 span:before {
   position: absolute;
@@ -191,6 +192,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover .display-tc h3 {
   font-size: 16px;
   margin-bottom: 5%;
+  margin-top: 1%;
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h3,
